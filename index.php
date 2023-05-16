@@ -42,15 +42,18 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/style.css">
     <title>OOP EX</title>
 </head>
 <body>
-    <h1>MOVIES</h1>
-    <div>
-        <h2><?php echo "{$firstMov->printMovTitle()}"; ?></h2>
-        <h4><?php echo "{$firstMov->printMovLang()}"; ?></h4>
-        <h4><?php echo "{$firstMov->printMovRating()}"; ?></h4>
-        <h6><?php echo "{$firstMov->printMovDesc()}"; ?></h6>
+    <h1 id="title">MOVIES</h1>
+    <div class="container flex">
+        <div class="card flex f-col">
+            <h2 class="card-title"><?php echo "{$firstMov->printMovTitle()}"; ?></h2>
+            <h4><?php echo "{$firstMov->printMovLang()}"; ?></h4>
+            <h4><?php echo "{$firstMov->printMovRating()}⭐"; ?></h4>
+            <h6><?php echo "{$firstMov->printMovDesc()}"; ?></h6>
+        </div>
     </div>
 </body>
 </html>
