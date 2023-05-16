@@ -5,7 +5,8 @@
 }
 
 body {
-    background-color: #294637;
+    background-color: #353736;
+    word-wrap: break-word;
 }
 
 .flex {
@@ -19,6 +20,7 @@ body {
 .container {
     width: 90%;
     margin: 0 auto;
+    justify-content: space-between;
 }
 
 #title {
@@ -30,9 +32,11 @@ body {
 }
 
 .card {
+    justify-content: space-between;
     cursor: pointer;
     padding: 10px 0 25px 0;
-    width: calc(100% / 3 - 20px);
+    margin: 0 5px;
+    width: calc(100% / 3 - 80px);
     text-align: center;
     background-image: linear-gradient(#5ec18f, #732575);
     color: #d2d2d2;

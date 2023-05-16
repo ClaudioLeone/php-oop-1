@@ -34,6 +34,13 @@
 
     $firstMov = new Movie("PHP in 60 secondi");
     $firstMov->setMovData("5", "it-IT", "Nicholas Cage, in questo frenetico corso di 60 secondi, dovrà acquisire una padronanza assoluta di PHP");
+
+    $secondMov = new Movie("La notte dei morti viventi II, the SQL!");
+    $secondMov->setMovData("4.5", "it-IT", "Zombie a orde e solo queries di mySQL per difendersi... serve altro?");
+
+    $thirdMov = new Movie("JAVA = JAVASCRIPT");
+    $thirdMov->setMovData("0.5", "it-IT", "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAHHH!");
+
 ?>
 
 <!DOCTYPE html>
@@ -53,6 +60,20 @@
             <h4><?php echo "{$firstMov->printMovLang()}"; ?></h4>
             <h4><?php echo "{$firstMov->printMovRating()}⭐"; ?></h4>
             <h6><?php echo "{$firstMov->printMovDesc()}"; ?></h6>
+        </div>
+
+        <div class="card flex f-col">
+            <h2 class="card-title"><?php echo "{$secondMov->printMovTitle()}"; ?></h2>
+            <h4><?php echo "{$secondMov->printMovLang()}"; ?></h4>
+            <h4><?php echo "{$secondMov->printMovRating()}⭐"; ?></h4>
+            <h6><?php echo "{$secondMov->printMovDesc()}"; ?></h6>
+        </div>
+
+        <div class="card flex f-col">
+            <h2 class="card-title"><?php echo "{$thirdMov->printMovTitle()}"; ?></h2>
+            <h4><?php echo "{$thirdMov->printMovLang()}"; ?></h4>
+            <h4><?php echo "{$thirdMov->printMovRating()}⭐"; ?></h4>
+            <h6><?php echo "{$thirdMov->printMovDesc()}"; ?></h6>
         </div>
     </div>
 </body>
